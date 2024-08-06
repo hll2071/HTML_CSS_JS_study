@@ -15,6 +15,11 @@
 <body>
     <table>
         <caption>선뮬용과 가정용 상품 구성</caption>
+        <colgroup> <!--열을 묶어주는 태그 각각 열마다 col을 붙여줘야 하고 col span="n"처럼 여러개로 묶어 한 번에 스타일을 지정해줄 수도 있다.-->
+            <col style="background-color : #eee">
+            <col>
+            <col span="2" style="width:150px;">
+        </colgroup>
         <thead> <!--thead(제목), tbody(본문), tfoot(요약)-->
             <tr>
                 <th>용도</th>
