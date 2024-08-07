@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" autocomplete="off"> <!-- action은 form 태그 안에 내용을 처리해 줄 서버 프로그램을 지정, autocomplete는 자동완성 기능 기본값은 on-->
+        <fieldset>
+            <legend>그룹 이름</legend>
+            <label>아이디<input type="text"></label> <!--라벨을 쓰는 첫번째 방법, 라벨 안에 폼 요소를 넣는다. 라벨은 폼 요소에 레이블을 달아준다.-->
+            <label for="user-pw">비밀번호</label> <!--라벨을 쓰는 두 번째 방법, id를 label에 for로 연결해준다. 라벨과 폼 요소가 떨어져도 연결이 된다는 장점이 있다.-->
+            <input id="user-pw" type="text">
+        </fieldset> 
+    </form>
+</body>
+</html>
