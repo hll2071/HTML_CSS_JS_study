@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test-class {
+            background : rgb(218, 154, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        섹션 내용
+    </div>
+    <div class="test">
+        섹션 내용
+    </div>
+    <div class="test">
+        섹션 내용
+    </div>
+    <button onclick="add()">클래스 추가</button>
+    <button onclick="remove()">클래스 제거</button>
+    <button onclick="toggle()">클래스 토글</button>
+    <script>
+        let element = document.querySelectorAll('.test')
+        function toggle() {
+            for(let i=0;i<element.length;i++) {
+                element[i].classList.toggle('test-class');
+            }
+        }
+        function remove() {
+            for(let i=0;i<element.length;i++) {
+                element[i].classList.remove('test-class');
+            }
+        }
+        function add() {
+            for(let i=0;i<element.length;i++) {
+                element[i].classList.add('test-class');
+            }
+        }
+    </script>
+</body>
+</html>
